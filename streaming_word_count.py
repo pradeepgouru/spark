@@ -3,7 +3,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode
 from pyspark.sql.functions import split
 
-# Run 'nc -l <some port number like 9999' in a different tab.
+# Run 'nc -l <some port number like 9999>' in a different tab.
 # Type words in the console so that readStream can pick it
 
 if __name__ == "__main__":

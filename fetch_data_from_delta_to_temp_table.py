@@ -32,3 +32,5 @@ df_new = mydf.select(udf_parse_json(mydf.discount_percent).alias("attr_2"))
 df_new.show()
 
 #To DO: Add df_new back to the 'df' and write it to output table path
+
+df.write.format("csv").mode("overwrite").option("compression", "gzip").save("s3://qubole-sup/pradeepg/payment_data_history_temp/")
